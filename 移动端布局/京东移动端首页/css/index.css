@@ -1,0 +1,282 @@
+/* body{
+    
+} */
+img,
+a{
+    -webkit-touch-callout: none;
+}
+header ul{
+    height: 45px;
+    background-color: rgb(51,51,51);
+    line-height: 45px;
+}
+header ul li a{
+    display: block;
+    float: left;
+    text-align: center;
+    height: 45px;
+}
+header ul li:nth-child(1) a{
+    width: 8%;
+}
+header ul li:nth-child(2) a{
+    width: 11%;
+    background: url(../images/5b850ecaN644d2983\ \(1\).png) no-repeat center;
+    background-size: 30px 30px;
+}
+header ul li:nth-child(3) a{
+    width: 56%;
+    color: white;
+}
+header ul li:nth-child(4) a{
+    width: 25%;
+    background-color: rgb(246,53,21);
+    color: white;
+}
+nav{
+    position: fixed;
+    top: 45px;
+    /* left: 0; */
+    width: 100%;
+    min-width: 320px;
+    max-width: 1080px;
+    /* overflow: hidden; */
+    /* background-color: red; */
+    /* border: 1px solid red; */
+    overflow: hidden;
+    z-index: 2;
+}
+.wark{
+    position: relative;
+    height: 44px;
+    /* background-color: purple; */
+}
+.wark::before{
+    content: '';
+    display: block;
+    height: 44px;
+    width: 40px;
+    /* float: left; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/下载.png) no-repeat center;
+    background-size: 20px 18px;
+}
+.wark::after{
+    content: '登录';
+    display: block;
+    /* float: right; */
+    height: 44px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 44px;
+    /* background: url(../images/下载1.png) no-repeat center; */
+    /* background-size: 20px 18px; */
+}
+.nav{
+    height: 44px;
+    /* background: #ccc; */
+    padding: 7px 50px;
+    
+}
+.nav ul{
+    padding: 7px 0;
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%; 
+}
+.nav ul li:nth-child(1){
+    position: relative;
+    float: left;
+    width: 43px;
+    height: 100%;
+    /* background-color: red; */
+    border-right: 1px solid #ccc;
+    
+}
+.nav ul li:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 15px;
+    width: 20px;
+    background: url(../images/下载1.png) no-repeat;
+    background-size: 20px 15px;
+}
+.nav ul li:nth-child(2){
+    position: relative;
+    float: left;
+    width: 23px;
+    height: 100%;
+    margin-right: 5px;
+    /* background-color: purple; */
+    
+}
+.nav ul li:nth-child(2)::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 15px;
+    background: url(../images/jd-sprites.png) -81px 0;
+    background-size: 200px;
+    /* background-color: red; */
+}
+.nav ul li:nth-child(3){
+    float: left;
+    width: 60%;
+    /* height: 100%; */
+    background-color: purple;
+}
+.nav input[type=search]{
+    /* display: block; */
+    float: left;
+    height: 16px;
+    /* line-height: 15px; */
+    font-size: 14px;
+    width: 100%;
+    /* height: 100%; */
+    border: 0;
+    /* color: red; */
+}
+
+.trans{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    padding: 0 13px;
+    background: url(../images/7f5ba0eeb4a2e2f4.png!q70.png) no-repeat;
+    background-size: 100% 100%;
+}
+.trans ul{
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    /* padding: 0 13px; */
+    overflow: hidden;
+    width: 90%;
+    height: 146px;
+    background-color: purple;
+}
+.trans ul li{
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+.trans ul li a{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    
+}
+.trans ul li a img{
+    height: 100%;
+    width: 100%;
+}
+.nav_picture{
+    height: 120px;
+    /* background-color: purple; */
+}
+.nav_picture ul li a{
+    position: relative;
+    display: block;
+    float: left;
+    height: 120px;
+   
+}
+.nav_picture ul li:nth-child(1) a{
+    width: 25%;
+    /* background: url(../upload/563dd3890cdd42a4.png!q70.png) no-repeat; */
+    background-size: 100% 100%;
+    z-index: 2;
+}
+.nav_picture ul li:nth-child(2) a{
+    width: 50%;
+    /* background: url(../upload/5285133668e77019.gif) no-repeat; */
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.nav_picture ul li:nth-child(3) a{
+    width: 25%;
+    /* background: url(../upload/0416823883466528.png!q70.png) no-repeat; */
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.nav_picture ul li img{
+    height: 100%;
+    width: 100%;
+}
+/* .nav_picture ul li a span{
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    height: 40px;
+    width: 40px;
+    background: url(../images/jd-sprites.png);
+} */
+.holder{
+    background-color: rgb(246,246,246);
+}
+.nav_article{
+    /* height: 154px; */
+    
+    overflow: hidden;
+}
+.nav_article li a{
+    position: relative;
+    display: block;
+    float: left;
+    height: 77px;
+    width: 20%;
+    /* background-color: pink; */
+}
+.nav_article li a img{
+    /* content: ''; */
+    /* display: block; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 42px;
+    width: 42px;
+    /* background-color: red; */
+}
+/* .nav_article ul li a::after:nth-child(1){
+    background: url(../images/jd-sprites.png);
+    background-size: 100% 100%;
+} */
+.nav_article li a span{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+    height: 20px;
+    /* background-color: red; */
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(151,151,151);
+}
+.second{
+    margin: 20px auto;
+    width: 94%;
+    height: 141px;
+    border-radius: 5px;
+    background-color: white;
+}
