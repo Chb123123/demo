@@ -1,0 +1,627 @@
+@beasfont: 37.5px;
+a {
+  -webkit-touch-callout: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+// 约束屏幕，屏幕大于 750px 时，字体大小不在改变
+@media screen and (min-width: 750px) {
+  html {
+    // 把权重提到最高
+    font-size: 37.5px !important;
+  }
+}
+body {
+  width: 20rem;
+  max-width: 20rem;
+  min-width: 8.5333rem;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+}
+// 头部开始
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20rem;
+  height: 2.3467rem;
+  background-color: #ffdb47;
+  padding: 0 0.64rem;
+  z-index: 999;
+}
+.search-conten {
+  display: flex;
+  height: 2.3467rem;
+  // background-color: red;
+  a:nth-child(1) {
+    width: 0.96rem;
+    height: 2.3467rem;
+    margin-right: 0.9067rem;
+    background: url(../images/157199320847433454.png) no-repeat center center;
+    background-size: 100% auto;
+    background-color: 0.96rem, 1.6rem;
+  }
+  a:nth-child(2) {
+    flex: 1;
+    margin: 0.3733rem 0;
+    background-color: white;
+    line-height: 1.6rem;
+    padding-left: 0.5333rem;
+    border-radius: 0.8rem;
+    font-size: 0.64rem;
+  }
+  a:nth-child(3) {
+    float: right;
+    width: 0.96rem;
+    height: 2.3467rem;
+    margin-left: 0.9067rem;
+    background: url(../images/157199321817918653.png) no-repeat center;
+    background-size: 0.96rem 1.6rem;
+  }
+}
+// 轮播图模块
+.banner {
+  display: flex;
+  position: relative;
+  margin-top: 2.3467rem;
+  margin-bottom: 0.5333rem;
+  padding: 0 0.64rem;
+  height: 6.1067rem;
+  width: 20rem;
+  background: url(../images/161243731909884312.png) no-repeat;
+  background-size: 100% auto;
+}
+.container {
+  position: relative;
+  flex: 1;
+  // background-color: red;
+  height: 6.1067rem;
+  border-radius: 0.3667rem;
+  overflow: hidden;
+    .swiper-slide{
+      // border: 1px solid red;
+      height: 6.1067rem;
+      width: 18.9333rem;
+    }
+
+  img{
+    width: 18.6667rem;
+    height: 6.1067rem;
+  }
+}
+// 圆点模块
+// .trigger {
+//   display: flex;
+//   position: absolute;
+//   bottom: 0.2667rem;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   // width: 5.5467rem;
+//   height: 0.2133rem;
+//   li {
+//     width: 0.24rem;
+//     height: 0.2133rem;
+//     background-color: rgb(64, 166, 159);
+//     margin: 0 0.2667rem;
+//     border-radius: 0.1067rem;
+//     .trigger-style {
+//       width: 0.48rem;
+//       background-color: white;
+//     }
+//   }
+// }
+
+// 财神模块
+.banner_bottom {
+  width: 20rem;
+  height: 5.3333rem;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+// 导航栏
+.nav {
+  //   border: 1px solid red;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 0.4267rem;
+  margin-bottom: 0.4rem;
+  background-color: #f5f5f5;
+  li {
+    flex: 20%;
+    height: 3.7867rem;
+    display: flex;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-size: 0.4267rem;
+      span {
+        height: 2.24rem;
+        width: 2.24rem;
+      }
+    }
+  }
+}
+.nav li:nth-child(1) a span {
+  background: url(../upload/161294178174781132.png) no-repeat;
+  background-size: 100% 100%;
+}
+.nav li:nth-child(2) a span {
+  background: url(../upload/161293951076282456.png) no-repeat;
+  background-size: 100% 100%;
+}
+.nav li:nth-child(3) a span {
+  background: url(../upload/161294179334814175.png) no-repeat;
+  background-size: 100% 100%;
+}
+.nav li:nth-child(4) a span {
+  background: url(../upload/161293957567317395.png) no-repeat;
+  background-size: 100% 100%;
+}
+.nav li:nth-child(5) a span {
+  background: url(../upload/161293958842515136.png) no-repeat;
+  background-size: 100% 100%;
+}
+.nav li:nth-child(6) a span {
+  background: url(../upload/161293959950045622.png) no-repeat;
+  background-size: 100% 100%;
+}
+.nav li:nth-child(7) a span {
+  background: url(../upload/161293961484173843.png) no-repeat;
+  background-size: 100% 100%;
+}
+.nav li:nth-child(8) a span {
+  background: url(../upload/161293963977525820.png) no-repeat;
+  background-size: 100% 100%;
+}
+.nav li:nth-child(9) a span {
+  background: url(../upload/161293965567020138.png) no-repeat;
+  background-size: 100% 100%;
+}
+.nav li:nth-child(10) a span {
+  background: url(../upload/161293968063152286.png) no-repeat;
+  background-size: 100% 100%;
+}
+// 秒杀部分
+.spike {
+  width: (700rem / @beasfont);
+  margin: 0 auto;
+  // border: 1px solid red;
+  border-radius: (6rem / @beasfont);
+  overflow: hidden;
+  background-color: white;
+}
+// 限时抢购
+.sanpped {
+  display: flex;
+  flex-wrap: wrap;
+  height: (516rem / @beasfont);
+}
+.sanpped li {
+  flex: 50%;
+  display: flex;
+  // width: (350rem / @beasfont);
+  height: (258rem / @beasfont);
+  // background-color: #999;
+  padding: 0 (28rem / @beasfont);
+  flex-wrap: wrap;
+  // border: 1px solid #444;
+}
+.sanpped li:nth-child(2n-1) {
+  border-right: (1rem / @beasfont) solid #eee;
+}
+// .sanpped li:nth-child(3){
+//     border-right: (1rem / @beasfont) solid #ccc;
+// }
+.sanpped li:nth-child(n + 3) {
+  border-bottom: (1rem / @beasfont) solid #eee;
+}
+.sanpped li a {
+  position: relative;
+  display: flex;
+  // flex: 50%;
+  // display: inline-block;
+  width: (140rem / @beasfont);
+  height: (160rem / @beasfont);
+  // background-color: red;
+  font-size: (24rem / @beasfont);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+  color: red;
+}
+.sanpped li a em {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+  height: 1.44rem;
+  background: url(../images/下载.png) no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+  line-height: 2.1333rem;
+  color: #444;
+  font-size: 0.4267rem;
+}
+.sanpped li a span {
+  display: block;
+  width: (120rem / @beasfont);
+  height: (120rem / @beasfont);
+}
+.sanpped li a span img {
+  width: 100%;
+}
+.sanpped_left {
+  margin-right: (10rem / @beasfont);
+}
+.sanpped li h3 {
+  font-size: (30rem / @beasfont);
+  margin-bottom: (-10rem / @beasfont);
+  width: (258rem / @beasfont);
+}
+.sanpped li h3 strong {
+  display: inline-block;
+  margin-left: (20rem / @beasfont);
+  font-size: (24rem / @beasfont);
+}
+.sanpped li h3 span {
+  display: inline-block;
+  width: (34rem / @beasfont);
+  height: (28rem / @beasfont);
+  background-color: rgb(255, 204, 0);
+  line-height: (28rem / @beasfont);
+  // font-size: (24rem / @beasfont);
+  font-weight: normal;
+  border-radius: (10rem / @beasfont);
+}
+.sanpped li p {
+  font-size: (24rem / @beasfont);
+  color: #999;
+  // width: (258rem / @beasfont);
+}
+// 限时抢购结束
+// 为你推荐开始
+.seleced {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+
+.seleced li:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: (173rem / @beasfont);
+  height: (172rem / @beasfont);
+  // text-align: center;
+  // padding-left: (20rem / @beasfont);
+}
+.seleced li:nth-child(1) p {
+  // margin: (0rem/ @beasfont) auto;
+  font-size: (30rem / @beasfont);
+  // border: 1px solid blue;
+  color: #444;
+  font-weight: 800;
+  // text-align: center;
+  width: (137rem / @beasfont);
+}
+.seleced li:nth-child(1) span {
+  font-size: (20rem / @beasfont);
+  // border: 1px solid black;
+  color: #999;
+  width: (137rem / @beasfont);
+}
+.seleced li:nth-child(n + 2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: (120rem / @beasfont);
+  height: (172rem / @beasfont);
+  text-align: center;
+}
+.seleced li:nth-child(n + 2) span {
+  display: block;
+  margin-top: (20rem / @beasfont);
+  // background-color: red;
+  width: (100rem / @beasfont);
+  height: (100rem / @beasfont);
+}
+.seleced li:nth-child(n + 2) span img {
+  width: 100%;
+  height: 100%;
+}
+.seleced li a {
+  flex: 1;
+  font-size: (14rem / @beasfont);
+  // color: red;
+  // width: 14px;
+}
+// 签到红包
+.sign {
+  position: fixed;
+  right: (0rem / @beasfont);
+  top: 22.333rem;
+  z-index: 1;
+  height: (100rem / @beasfont);
+  width: (100rem / @beasfont);
+}
+.sign img {
+  width: 100%;
+  height: 100%;
+}
+// 推荐榜单
+.recommend_bg {
+  img {
+    height: 1.6rem;
+    vertical-align: middle;
+  }
+}
+// 人气榜
+.recommend {
+  // border: 1px solid red;
+  margin-bottom: 2.6667rem;
+  padding: 0 0.72rem;
+}
+.popularity {
+  // border: 1px solid red;
+  display: flex;
+  height: 7.0933rem;
+}
+// 人气榜左侧
+.popularity_left {
+  flex: 1;
+  // display: flex;
+  background-color: white;
+  border-radius: 0.24rem;
+  padding-top: .5333rem;
+  height: 7.0933rem;
+  // border: 1px solid red;
+  a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::after {
+      content: "人气榜";
+      // display: block;
+      width: 2.6667rem;
+      height: 0.9067rem;
+      line-height: 0.9067rem;
+      text-align: center;
+      position: absolute;
+      top: 3.4933rem;
+      font-size: 0.64rem;
+      border: 0.0533rem solid rgb(225, 164, 110);
+      background-color: white;
+      color: rgb(225, 164, 110);
+      border-radius: 0.4rem;
+    }
+    span {
+      width: 4rem;
+      height: 4rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    strong {
+      // margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      // flex-wrap: wrap;
+      align-items: center;
+      height: 96px;
+      width: 100%;
+      font-size: 0.5333rem;
+      color: white;
+      background: url(../upload/156929156220838915.png) no-repeat;
+      background-size: 100% 100%;
+      span {
+        margin: 0.64rem 0 0;
+        height: 0.8533rem;
+        width: 100%;
+        line-height: 0.8533rem;
+        text-align: center;
+        // border: 1px solid red;
+        font-size: 0.6933rem;
+        // color: white;
+      }
+    }
+  }
+}
+// 人气榜轮播图
+.focus-map {
+  flex: 1;
+  position: relative;
+  margin: 0 0.2667rem;
+  background-color: white;
+  border-radius: 0.24rem;
+  // padding-top: 0.4rem;
+  overflow: hidden;
+  .focus_container {
+    // border: 1px solid red;
+    a {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding-top: .56rem;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      // margin-bottom: .4rem;
+      // border: 1px solid red;
+      &::after {
+        content: "人气榜";
+        // display: block;
+        width: 2.6667rem;
+        height: 0.9067rem;
+        line-height: 0.9067rem;
+        text-align: center;
+        position: absolute;
+        top: 4.0533rem;
+        font-size: 0.64rem;
+        border: 0.0533rem solid #ff6700;
+        background-color: white;
+        color: #ff6700;
+        border-radius: 0.4rem;
+      }
+      span {
+        width: 4rem;
+        height: 4rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      strong {
+        // margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        align-items: center;
+        height: 2.56rem;
+        width: 100%;
+        font-size: 0.5333rem;
+        color: white;
+        background: url(../images/156929175197393382.png) no-repeat;
+        background-size: 100% 100%;
+        span {
+          margin: 0.64rem 0 0;
+          height: 0.8533rem;
+          width: 100%;
+          line-height: 0.8533rem;
+          text-align: center;
+          // border: 1px solid red;
+          font-size: 0.6933rem;
+          // color: white;
+        }
+      }
+    }
+  }
+}
+// 人气榜右侧
+.popularity_rigth {
+  flex: 1;
+  // margin: 0 .2667rem;
+  background-color: white;
+  border-radius: 0.24rem;
+  padding-top: .5333rem;
+  a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::after {
+      content: "人气榜";
+      // display: block;
+      width: 2.6667rem;
+      height: 0.9067rem;
+      line-height: 0.9067rem;
+      text-align: center;
+      position: absolute;
+      top: 3.4933rem;
+      font-size: 0.64rem;
+      border: 0.0533rem solid rgb(225, 164, 110);
+      background-color: white;
+      color: rgb(225, 164, 110);
+      border-radius: 0.4rem;
+    }
+    span {
+      width: 4rem;
+      height: 4rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    strong {
+      // margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      // flex-wrap: wrap;
+      align-items: center;
+      height: 96px;
+      width: 100%;
+      font-size: 0.5333rem;
+      color: white;
+      background: url(../upload/156929156220838915.png) no-repeat;
+      background-size: 100% 100%;
+      span {
+        margin: 0.64rem 0 0;
+        height: 0.8533rem;
+        width: 100%;
+        line-height: 0.8533rem;
+        text-align: center;
+        // border: 1px solid red;
+        font-size: 0.6933rem;
+        // color: white;
+      }
+    }
+  }
+}
+// 底部固定导航栏
+.nav_bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 20rem;
+  height: 2.6667rem;
+  z-index: 999;
+  background-color: white;
+  a {
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2.6667rem;
+    font-size: 0.48rem;
+    span {
+      width: 1.28rem;
+      height: 1.28rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+// 返回顶部模块
+.goback {
+  cursor: pointer;
+  position: fixed;
+  bottom: 2.6667rem;
+  right: 1.3333rem;
+  width: 1.0667rem;
+  height: 1.0667rem;
+  line-height: 1.0667rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  font-size: 0.6667rem;
+  color: white;
+  display: none;
+}
