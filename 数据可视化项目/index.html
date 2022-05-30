@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>数据可视化</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/ECharts.js"></script>
+		<script src="js/jQuery.js"></script>
+		<script src="js/flexible.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box1">
+				<!-- 设备总数模块 -->
+				<div class="device">
+					<div class="panel">
+						<div class="inner">
+							<ul class="device-container">
+								<li>
+									2,190
+									<span><i class="dots-blue"></i>设备总数</span>
+								</li>
+								<li>
+									190
+									<span><i class="dots-green"></i>季度新增</span>
+								</li>
+								<li>
+									3001
+									<span><i class="dots-green"></i>运营设备</span>
+								</li>
+								<li style="margin-right: 0">
+									108 <span><i class="dots-red"></i>异常设备</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 设备故障监控模块 -->
+				<div class="fault">
+					<div class="panel">
+						<div class="inner">
+							<div class="fault-head">
+								<a href="javascript:;" class="fault-style">设备故障监控</a>
+								<span></span>
+								<a href="javascript:;">异常设备监控</a>
+							</div>
+						</div>
+					</div>
+					<div class="fault-container">
+						<!-- 故障目录 -->
+						<div class="fault-content">
+							<span>故障时间</span>
+							<span>设备地址</span>
+							<span>故障代码</span>
+						</div>
+						<!-- 故障内容 -->
+						<div class="fault-detail">
+							<ul class="fault-detail-ul">
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省赣州市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省赣州市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省赣州市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省赣州市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省赣州市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省赣州市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省赣州市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省赣州市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省赣州市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省赣州市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="abnormal-container">
+						<!-- 异常目录 -->
+						<div class="abnormal-content">
+							<span>异常时间</span>
+							<span>设备地址</span>
+							<span>异常代码</span>
+						</div>
+						<!-- 故障内容 -->
+						<div class="abnormal-detail">
+							<ul class="abnormal-detail-ul">
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省吉安市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省吉安市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省吉安市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省吉安市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省吉安市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省吉安市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省吉安市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省吉安市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省吉安市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+								<li>
+									<i class="dots"></i>
+									<span>20220405</span>
+									<span>江西省吉安市章贡区湖边镇江西环境工程职业学院</span>
+									<span>1000001</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- 点位分布统计模块 -->
+				<div class="point">
+					<div class="panel">
+						<div class="inner">
+							<div class="point-head">点位分布统计</div>
+							<div class="point-body">
+								<div class="cal-1"></div>
+								<div class="cal-2">
+									<div class="cal-num">
+										320.11
+										<span>
+											<i class="dots-red"></i>
+											点位总数
+										</span>
+									</div>
+									<div class="cal-add">
+										418
+										<span><i class="dots-yellow"></i> 本月新增</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box2">
+				<!-- 地图模块 -->
+				<!-- 设备数据统计模块 -->
+				<div class="equipment-num">设备数据统计</div>
+				<div class="map"></div>
+				<!-- 全国用户统计模块 -->
+				<div class="user-sun">
+					<div class="panel">
+						<div class="inner">
+							<div class="user-sun-head">全国用户总量统计</div>
+							<div class="point-body">
+								<div class="cal-3"></div>
+								<div class="cal-2">
+									<div class="cal-num">
+										1208,99
+										<span>
+											<i class="dots-red"></i>
+											用户总量
+										</span>
+									</div>
+									<div class="cal-add">
+										218
+										<span><i class="dots-yellow"></i> 本月新增</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box3">
+				<!-- 时间模块 -->
+				<div class="times">
+					<div class="panel">
+						<div class="inner">
+							<ul class="day">
+								<li>365天</li>
+								<li>90天</li>
+								<li>30天</li>
+								<li>24小时</li>
+							</ul>
+							<div class="money">
+								<span>20301,987</span>
+								<span>998347</span>
+							</div>
+							<div class="number">
+								<span><i class="dots-red"></i>订单量</span>
+								<span><i class="dots-yellow"></i>销售额(万元)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 销售统计模块 -->
+				<div class="Statistics">
+					<div class="panel">
+						<div class="inner">
+							<div class="head">
+								销售统计
+								<i></i>
+								<span class="Statistics-style">年</span>
+								<span>月</span>
+								<span>季</span>
+								<span>周</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 渠道分布模块 -->
+				<div class="channel">
+					<div class="channel-left">
+						<div class="panel">
+							<div class="inner" style="padding-left: 0.5313rem">
+								<div class="head">渠道分布</div>
+								<div class="chanel-left-cal"></div>
+							</div>
+						</div>
+					</div>
+					<div class="channel-right">
+						<div class="panel">
+							<div class="inner" style="padding-left: 0.5313rem">
+								<div class="head">一年销售进度</div>
+								<div class="channel-right-cal"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 全国排行模块 -->
+				<div class="ranking">
+					<div class="panel">
+						<div class="inner">
+							<div class="head">
+								<h4>全国排行</h4>
+								<h4>各省热销<span>//近30日//</span></h4>
+							</div>
+							<!-- 奖杯模块 -->
+							<div class="trophy">
+								<div class="trophy-cal-left">
+									<span
+										><img
+											src="image/cbfd038ae5fd7c4e23d4747d843a22d.png"
+											alt=""
+										/>旺仔牛逼糖</span
+									>
+									<span
+										><img
+											src="image/3a7537e22a009b38cea2a042e0be7d5.png"
+											alt=""
+										/>六个核弹</span
+									>
+									<span
+										><img
+											src="image/屏幕截图 2022-04-06 190725.png"
+											alt=""
+										/>脑白金</span
+									>
+								</div>
+								<ul class="tronphy-cal-center">
+									<li class="tronphy-cal-center-style">
+										北京<span
+											>25.178<i class="arrow-red"><em></em></i
+										></span>
+									</li>
+									<li>
+										河北<span
+											>26.138<i class="arrow-green"><em></em></i
+										></span>
+									</li>
+									<li>
+										上海<span
+											>21.892<i class="arrow-red"><em></em></i
+										></span>
+									</li>
+									<li>
+										江苏<span
+											>22.189<i class="arrow-green"><em></em></i
+										></span>
+									</li>
+									<li>
+										山东<span
+											>18.178<i class="arrow-red"><em></em></i
+										></span>
+									</li>
+								</ul>
+								<div class="tronphy-cal-right">
+									<ul class="trophy-detail" style="display: block">
+										<li>
+											可爱多<span
+												>25.178<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											哇哈哈<span
+												>25.178<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											加多宝<span
+												>25.178<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											王老吉<span
+												>25.178<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											和其正<span
+												>25.178<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											喜之郎<span
+												>25.178<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+									</ul>
+									<ul class="trophy-detail">
+										<li>
+											可爱多<span
+												>44.444<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											哇哈哈<span
+												>44.444<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											加多宝<span
+												>44.444<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											王老吉<span
+												>44.444<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											和其正<span
+												>44.444<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											喜之郎<span
+												>44.444<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+									</ul>
+									<ul class="trophy-detail">
+										<li>
+											可爱多<span
+												>33.33<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											哇哈哈<span
+												>25.178<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											加多宝<span
+												>33.33<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											王老吉<span
+												>33.33<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											和其正<span
+												>33.33<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											喜之郎<span
+												>33.33<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+									</ul>
+									<ul class="trophy-detail">
+										<li>
+											可爱多<span
+												>25.178<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											哇哈哈<span
+												>22.222<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											加多宝<span
+												>22.222<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											王老吉<span
+												>22.2228<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											和其正<span
+												>22.222<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											喜之郎<span
+												>22.222<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+									</ul>
+									<ul class="trophy-detail">
+										<li>
+											可爱多<span
+												>11.111<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											哇哈哈<span
+												>11.111<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											加多宝<span
+												>11.111<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											王老吉<span
+												>11.111<i class="arrow-green"><em></em></i
+											></span>
+										</li>
+										<li>
+											和其正<span
+												>11.111<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+										<li>
+											喜之郎<span
+												>11.111<i class="arrow-red"><em></em></i
+											></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

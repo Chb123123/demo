@@ -1,0 +1,692 @@
+body {
+	background: url(../image/bg.jpg) no-repeat 0 0 / cover;
+	/* background-size: cover; */
+}
+/* 当页面小于1080时 font-size 的值不在变化 */
+@media screen and (max-width: 1080px) {
+	body {
+		font-size: 36px !important;
+	}
+}
+/* 当页面大于 1920px 时 font-size的值为 64px 不在变化*/
+@media screen and (min-width: 1920px) {
+	body {
+		font-size: 64px !important;
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+h3,
+h4 {
+	font-weight: 400;
+}
+/* 公共边框样式 */
+.panel {
+	position: relative;
+	border: 15px solid transparent;
+	width: 100%;
+	height: 100%;
+	border-image-source: url(../image/border.png);
+	border-width: 0.7969rem 0.5938rem 0.3125rem 2.0313rem;
+	border-image-repeat: round;
+	border-image-slice: 51 38 20 130;
+	margin-bottom: 0.3125rem;
+}
+/* 盒子内容区域 */
+.inner {
+	position: absolute;
+	top: -0.7969rem;
+	right: -0.5938rem;
+	bottom: -0.3125rem;
+	left: -2.0313rem;
+	padding: 0.3125rem 0.375rem;
+	/* background-color: red; */
+	color: white;
+}
+/* '公告标题样式 */
+.head {
+	height: 0.4063rem;
+	width: 100%;
+	line-height: 0.4063rem;
+	color: white;
+	font-size: 0.3125rem;
+}
+.container {
+	min-width: 1024px;
+	max-width: 1920px;
+	min-height: 780px;
+	max-height: 1078px;
+	display: flex;
+	margin: auto;
+	padding-top: 1.25rem;
+	/* width: 28.125rem; */
+	/* height: 16.8438rem; */
+	/* border: 1px solid red; */
+	background: url(../image/logo.png) no-repeat top center;
+	background-size: contain;
+}
+/* 页面左侧模块 */
+.box1 {
+	flex: 30%;
+	/* border: 1px solid red; */
+}
+/* 设备数量模块 */
+.device {
+	/* background-color: red; */
+	width: 100%;
+	height: 1.7188rem;
+	font-size: 24px;
+	margin-bottom: 0.3125rem;
+}
+.device-container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.device-container > li {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	/* text-align: center; */
+	/* background-color: red; */
+	font-size: 0.4063rem;
+	margin-right: 0.5469rem;
+}
+.device-container > li > span {
+	font-size: 0.25rem;
+	/* background-color: pink; */
+	height: 0.3281rem;
+	line-height: 0.3281rem;
+	color: #4c9bfd;
+}
+/* 小圆点样式 */
+.dots-blue {
+	display: inline-block;
+	width: 0.1094rem;
+	height: 0.2188rem;
+	background-color: blue;
+	margin-right: 0.1563rem;
+	border-radius: 0.0469rem;
+}
+.dots-green {
+	display: inline-block;
+	width: 0.1094rem;
+	height: 0.2188rem;
+	background-color: #6acca3;
+	margin-right: 0.1563rem;
+	border-radius: 0.0469rem;
+}
+.dots-red {
+	display: inline-block;
+	width: 0.1094rem;
+	height: 0.2188rem;
+	background-color: #ed3f35;
+	margin-right: 0.1563rem;
+	border-radius: 0.0469rem;
+}
+.dots-yellow {
+	display: inline-block;
+	width: 0.1094rem;
+	height: 0.2188rem;
+	background-color: #eacf19;
+	margin-right: 0.1563rem;
+	border-radius: 0.0469rem;
+}
+/* 设备故障模块 */
+.fault {
+	position: relative;
+	width: 100%;
+	height: 7.5rem;
+	margin-bottom: 0.3125rem;
+}
+.fault-head {
+	height: 0.375rem;
+	/* background-color: red; */
+	font-size: 0.3125rem;
+	line-height: 0.375rem;
+}
+.fault-head > .fault-style {
+	color: white;
+	/* height: .375rem; */
+	/* font-size: .375rem; */
+}
+.fault-head > a {
+	display: inline-block;
+	height: 0.375rem;
+	color: #1950c4;
+	font-size: 0.2813rem;
+}
+.fault-head > span {
+	margin: 0 0.3125rem;
+	border-left: 0.0313rem solid #00f2f1;
+	height: 0.3125rem;
+}
+/* 故障模块容器 */
+.fault-container {
+	position: absolute;
+	top: 1.0156rem;
+	left: 0;
+	width: 100%;
+	height: 6.25rem;
+	/* background-color: red; */
+	/* display: none; */
+}
+/* 故障目录 */
+.fault-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 0.5938rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	font-size: 0.2188rem;
+	color: #68d8f1;
+	padding: 0 0.5781rem;
+	line-height: 0.5781rem;
+}
+.fault-content > span:nth-child(1) {
+	width: 1.25rem;
+}
+.fault-content > span:nth-child(2) {
+	width: 3.125rem;
+	/* margin: 0 36px; */
+}
+.fault-content > span:nth-child(3) {
+	width: 1.25rem;
+}
+/* 故障内容 */
+.fault-detail {
+	font-size: 14px;
+	/* background-color: red; */
+	height: 5.625rem;
+	overflow: hidden;
+}
+.fault-detail-ul {
+	width: 100%;
+	/* height: 10px; */
+	/* background-color: red; */
+	animation: move 10s linear infinite;
+}
+.fault-detail-ul > li {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 0.5781rem;
+	line-height: 0.5781rem;
+	color: #4f8ad4;
+	padding: 0 0.5781rem;
+}
+/* 小圆点 */
+.dots {
+	position: absolute;
+	top: 50%;
+	left: 0.3125rem;
+	transform: translateY(-50%);
+	width: 0.0781rem;
+	height: 0.2188rem;
+	background-color: #00f2f1;
+	border-radius: 0.0469rem;
+	display: none;
+}
+.fault-detail-ul > li > span:nth-of-type(1) {
+	width: 1.25rem;
+}
+.fault-detail-ul > li > span:nth-of-type(2) {
+	width: 3.125rem;
+	/* 内容超出盒子时 强制不换行 超出的部分以省略号的形式显示 */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/* 鼠标经过 li 背景变为透明白色 */
+.fault-detail-ul > li:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #00f2f1;
+	/* 鼠标经过停止动画 */
+}
+.fault-detail-ul:hover {
+	animation-play-state: paused;
+}
+.fault-detail-ul > li > span:nth-of-type(3) {
+	width: 1.25rem;
+}
+/* 异常容器 */
+.abnormal-container {
+	position: absolute;
+	top: 1.0156rem;
+	left: 0;
+	width: 100%;
+	height: 6.25rem;
+	display: none;
+}
+.abnormal-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 0.5938rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	font-size: 0.2188rem;
+	color: #68d8f1;
+	padding: 0 0.5781rem;
+	line-height: 0.5781rem;
+}
+.abnormal-content > span:nth-child(1) {
+	width: 1.25rem;
+}
+.abnormal-content > span:nth-child(2) {
+	width: 3.125rem;
+	/* margin: 0 36px; */
+}
+.abnormal-content > span:nth-child(3) {
+	width: 1.25rem;
+}
+/* 通过css 实现滚动效果 */
+@keyframes move {
+	0% {
+	}
+	100% {
+		transform: translateY(-50%);
+	}
+}
+/* 故障内容 */
+.abnormal-detail {
+	font-size: 14px;
+	/* background-color: red; */
+	height: 5.625rem;
+	overflow: hidden;
+}
+.abnormal-detail-ul {
+	width: 100%;
+	/* height: 10px; */
+	/* background-color: red; */
+	animation: move 10s linear infinite;
+}
+.abnormal-detail-ul:hover {
+	animation-play-state: paused;
+}
+.abnormal-detail-ul > li {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 0.5781rem;
+	line-height: 0.5781rem;
+	color: #4f8ad4;
+	padding: 0 0.5781rem;
+}
+.abnormal-detail-ul > li > span:nth-of-type(1) {
+	width: 1.25rem;
+}
+.abnormal-detail-ul > li > span:nth-of-type(2) {
+	width: 3.125rem;
+	/* 内容超出盒子时 强制不换行 超出的部分以省略号的形式显示 */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/* 鼠标经过 li 背景变为透明白色 */
+.abnormal-detail-ul > li:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #00f2f1;
+}
+.abnormal-detail-ul > li > span:nth-of-type(3) {
+	width: 1.25rem;
+}
+/* 点位分布模块 */
+.point {
+	width: 100%;
+	height: 5.3125rem;
+}
+.point-head {
+	font-size: 0.375rem;
+	height: 0.4063rem;
+	margin-bottom: 0.3906rem;
+}
+.point-body {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 3.75rem;
+	/* background-color: red; */
+}
+.cal-1 {
+	width: 4.875rem;
+	height: 3.75rem;
+	/* background-color: pink; */
+}
+.cal-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 2.625rem;
+	height: 3.75rem;
+	background: url(../image/rect.png) no-repeat 0 0 / cover;
+	/* background-color: pink; */
+}
+.cal-num {
+	display: flex;
+	flex-direction: column;
+	width: 1.6875rem;
+	height: 1.0938rem;
+	font-size: 0.4375rem;
+	/* background-color: red; */
+	margin-bottom: 0.3125rem;
+}
+.cal-num > span {
+	margin-top: 0.1563rem;
+	font-size: 0.25rem;
+}
+.cal-add {
+	display: flex;
+	flex-direction: column;
+	width: 1.6875rem;
+	height: 1.0938rem;
+	font-size: 0.4375rem;
+}
+.cal-add > span {
+	font-size: 0.25rem;
+	margin-top: 0.1563rem;
+}
+.box2 {
+	flex: 40%;
+	margin: 0 0.3125rem 0;
+	/* border: 1px solid red; */
+	padding-top: 0.5469rem;
+}
+/* 设备统计模块 */
+.equipment-num {
+	height: 0.8281rem;
+	line-height: 0.8281rem;
+	font-size: 0.3125rem;
+	color: white;
+	/* background-color: red; */
+}
+/* 地图模块 */
+.map {
+	height: 8.2031rem;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+	margin-bottom: 0.3125rem;
+}
+/* 全国用户统计模块 */
+.user-sun {
+	width: 100%;
+	height: 5.3125rem;
+}
+.user-sun-head {
+	font-size: 0.3125rem;
+	height: 0.4063rem;
+	line-height: 0.4063rem;
+	margin-bottom: 0.3125rem;
+}
+.user-sun .cal-3 {
+	width: 7.9688rem;
+	/* background-color: red; */
+}
+.box3 {
+	flex: 30%;
+	/* border: 1px solid red; */
+}
+/* 时间模块 */
+.times {
+	width: 100%;
+	height: 2.3438rem;
+	margin-bottom: 0.3125rem;
+}
+.day {
+	display: flex;
+	width: 100%;
+	height: 0.2813rem;
+	line-height: 0.2813rem;
+	font-size: 0.2813rem;
+	color: #1950c4;
+	margin-bottom: 0.3125rem;
+}
+.day > li {
+	padding: 0 0.2813rem;
+	border-left: 0.0313rem solid #00f2f1;
+}
+.day > li:nth-child(1) {
+	font-size: 0.375rem;
+	color: white;
+	padding-left: 0;
+	border-left: 0;
+}
+.money {
+	display: flex;
+	height: 0.5781rem;
+	width: 100%;
+	color: white;
+	font-size: 0.4375rem;
+	margin-bottom: 0.1563rem;
+}
+.money > span {
+	flex: 1;
+}
+.number {
+	display: flex;
+	font-size: 0.25rem;
+	color: #68d8fe;
+	height: 0.3281rem;
+	line-height: 0.3281rem;
+	/* background-color: red; */
+}
+.number > span {
+	flex: 1;
+}
+/* 销售统计模块 */
+.Statistics {
+	width: 100%;
+	height: 3.875rem;
+	margin-bottom: 0.3125rem;
+}
+.Statistics .head{
+	height: .375rem;
+	line-height: .375rem;
+	/* background-color: red; */
+}
+.Statistics .head >i{
+	display: inline-block;
+	height: .375rem;
+	border-left: 2px solid #00f2f1;
+	margin: 0 .3125rem 0;
+	vertical-align: middle;
+}
+.Statistics .head > span{
+	display: inline-block;
+	height: .375rem;
+	width: .375rem;
+	font-size: .25rem;
+	/* line-height: .375rem; */
+	text-align: center;
+	/* background-color: #00f2f1; */
+	margin-right: .3125rem;
+	color:#1950c4;
+	cursor: pointer;
+}
+.Statistics-style{
+	background-color: #1950c4;
+	color: white!important;
+	border-radius: .125rem;
+}
+/* 渠道分布模块 */
+.channel {
+	display: flex;
+	justify-content: space-between;
+	height: 3.5938rem;
+	width: 100%;
+	margin-bottom: 0.3125rem;
+}
+.channel-left {
+	width: 4.1563rem;
+	height: 3.625rem;
+}
+/* 渠道公布模块 */
+.chanel-left-cal {
+	width: 3.0313rem;
+	height: 2.625rem;
+	/* padding: .1563rem; */
+	/* background-color: rgba(0,0,0,0.4); */
+	/* margin: auto; */
+}
+.channel-right {
+	width: 4.1563rem;
+	height: 3.625rem;
+}
+.channel-right-cal {
+	width: 3.2188rem;
+	height: 1.3125rem;
+	/* background-color: red; */
+}
+/* 全国排行模块 */
+.ranking {
+	width: 100%;
+	height: 4.375rem;
+}
+.ranking .head {
+	display: flex;
+}
+.ranking .head > h4:nth-child(1) {
+	width: 2.625rem;
+}
+.ranking .head > h4:nth-child(2) {
+	width: 4.875rem;
+}
+.ranking .head > h4:nth-child(2) span {
+	display: block;
+	float: right;
+	color: #00f2f1;
+	font-size: 0.2188rem;
+}
+/* 奖杯模块 */
+.trophy {
+	display: flex;
+	margin-top: 0.3906rem;
+	height: 2.7344rem;
+}
+.trophy-cal-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 2.625rem;
+	/* background-color: purple; */
+}
+.trophy-cal-left > span > img {
+	display: inline-block;
+	height: 0.5625rem;
+	width: 0.5625rem;
+	margin-right: 0.1563rem;
+	vertical-align: middle;
+}
+.trophy-cal-left > span {
+	height: 0.5625rem;
+	line-height: 0.5625rem;
+	/* background-color: #00f2f1; */
+	font-size: 0.2188rem;
+	color: #4c9bfd;
+}
+.tronphy-cal-center {
+	display: flex;
+	flex-direction: column;
+	width: 2.4375rem;
+	/* background-color: blue; */
+}
+.tronphy-cal-center > li {
+	flex: 1;
+	color: #00f2f1;
+	/* background-color: green; */
+	/* height: .6094rem; */
+	font-size: 0.25rem;
+	line-height: .5469rem;
+	cursor: pointer;
+	padding-left: .0781rem;
+}
+.tronphy-cal-center > li > span {
+	display: block;
+	float: right;
+	margin-right: .3125rem;
+	font-size: 0.2188rem;
+	line-height: .5469rem;
+}
+.tronphy-cal-center-style{
+	background-color: rgba(255,255,255,0.1);
+}
+/* 箭头形状模块 */
+.arrow-red {
+	position: relative;
+	display: inline-block;
+	height: .125rem;
+	width: .0469rem;
+	background-color: red;
+	margin: 0 0.1563rem;
+}
+.arrow-red > em {
+	position: absolute;
+	top: -0.0469rem;
+	left: -0.0234rem;
+	border-bottom: .0469rem solid transparent;
+	border-right: .0469rem solid transparent;
+	border-top: .0469rem solid red;
+	border-left: .0469rem solid red;
+	transform: rotateZ(45deg);
+	/* background-color: pink; */
+}
+.arrow-green {
+	position: relative;
+	display: inline-block;
+	height: .125rem;
+	width: .0469rem;
+	background-color: green;
+	margin: 0 0.1563rem;
+	margin-bottom: .0469rem;
+}
+.arrow-green > em {
+	position: absolute;
+	bottom: -0.0469rem;
+	left: -.0234rem;
+	border-bottom: .0469rem solid green;
+	border-right: .0469rem solid green;
+	border-top: .0469rem solid transparent;
+	border-left: .0469rem solid transparent;
+	transform: rotateZ(45deg);
+	/* background-color: pink; */
+}
+
+.tronphy-cal-right {
+	position: relative;
+	flex: 1;
+	/* background-color: #00f2f1; */
+}
+.trophy-detail{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	width: 2.9844rem;
+	height: 2.7344rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: none;
+}
+.trophy-detail> li{
+	flex: 1;
+	font-size: .2188rem;
+	color:#00f2f1;
+	/* background-color: red; */
+	line-height: .4531rem;
+	padding-left: .3125rem;
+	padding-right: .1563rem;
+}
+.trophy-detail> li > span{
+	display: block;
+	float: right;
+}
