@@ -1,0 +1,385 @@
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color:#666;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    // color: none;
+}
+a:visited{
+    text-decoration: none;
+}
+input{
+    border: 0;
+    // 消除选中时的边框
+    outline: none;
+}
+strong{
+    font-weight: normal;
+}
+body{
+    background-color: #f5f5f5;
+}
+// 修改container的最大宽度
+@media screen and (min-width: 1280px) {
+    .container{
+        width: 1280px;
+    }
+}
+header{
+    padding-left: 0!important;
+}
+.logo{
+    a{
+    display: block;
+    background-color: rgb(255,94,82);
+    img{
+        display: block;
+        margin: 0 auto;
+        // position: absolute;
+        max-width: 100%;
+    }
+    }
+    
+}
+// 当屏幕为最小屏幕时，隐藏logo图片，显示logo字体
+.logo_xs{
+    display: block;
+    background-color: rgb(255,94,82);
+    // height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.nav{
+    // border: 1px solid red;
+    a{
+        display: block;
+        height: 44px;
+        line-height: 44px;
+        // border: 1px solid blue;
+        background-color: rgb(246,246,246);
+        padding-left: 40px;
+        color: rgb(115,118,115);
+        &::before{
+            vertical-align: middle;
+            // line-height: 44px;
+            margin-right: 6px;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .nav ul li a{
+        width: 16.666%;
+        float: left;
+        padding: 0;
+        text-align: center;
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav ul li a{
+        font-size: 14px;
+    }
+}
+.nav ul li a:hover{
+    background-color: #fff;
+    color: rgb(68,68,68);
+}
+// 左侧底部搜索栏
+@media screen and (max-width: 768px) {
+    .seach{
+        padding: 10px 0!important; 
+    }
+    .news_bg ul li:nth-child(n+2){
+        width: 50%!important;
+    }
+    .news_bg ul li:nth-child(1){
+        width: 100%!important;
+    }
+    
+}
+.seach{
+    // height: 75px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 1px;
+    padding: 25px 15px; 
+    background-color: rgb(246,246,246);
+    // overflow: hidden;
+    .row{
+        div{
+            padding: 0!important;
+        }
+        
+    }
+    [type=search]{
+        float: left;
+        width: 70%;
+        height: 34px;
+        border: 1px solid #ccc;
+        // border: 1px solid red;
+        padding-left: 10px;
+        border-right: 0;
+        
+    }
+    [type=submit]{
+        float: left;
+        width: 30%;
+        height: 34px;
+        background-color: #ff5e52;
+        color: #fff;
+        border: 1px solid red;
+        font-size: 12px;
+        border-radius: 0;
+        text-align: center;
+        padding: 0;
+    }
+}
+// 中间新闻模块
+
+.news_bg{
+    margin-top: 20px;
+    overflow: hidden;
+    ul{
+        li{
+            float: left;
+            padding-left: 5px;
+            // border: 1px solid red;
+            // overflow: hidden;
+            width: 25%;
+            // margin: 5px 0;
+            margin-bottom: 10px;
+            a{
+                position: relative;
+                display: block;
+                float: left;
+                width: 100%;
+                // border: 1px solid red;
+                height: 128px;
+                // margin: 0 0 10px 10px;
+                // margin: 5px 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                span{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 41px;
+                    width: 100%;
+                    transition: all 0.3s;
+                    background-color: rgba(0,0,0,.6);
+                    color: white;
+                    font-size: 13px;
+                    padding: 3px 10px;
+                    &:hover{
+                        background-color: #fe6c60;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.news_bg ul li:nth-child(1){
+    padding: 0;
+    width: 50%;
+    &:nth-child(1) a{
+    width: 100%;
+    height: 266px;
+    // margin-left: 0;
+        span{
+        font-size: 18px;
+        line-height: 41px;
+        padding: 0 10px;
+        }
+    }
+}
+.publish{
+    margin-top: 20px;  
+}
+@media screen and (max-width: 768px) {
+    .news{
+        padding: 0 20px!important;
+        h3{
+            font-size: 16px!important;
+        }
+    }
+    .content{
+        p{
+            font-size: 12px!important;
+        }
+    }
+
+}
+.news{
+    // background-color: #ccc;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    // height: 254px;
+    padding: 25px 0;
+    h3{
+        color: rgb(68,68,68);
+        font-size: 24px;
+        // width: 100%;
+        // height: 28px;
+        // line-height: 28px;
+        font-size: 20px;
+        // border: 1px solid red;
+        a{
+            display: inline-block;
+            transition: all 0.3s;
+            
+            &:hover{
+                color: red;
+            }            
+            span{
+                position: relative;
+                display: block;
+                float: left;
+                width: 38px;
+                height: 24px;
+                margin-right: 10px;
+                line-height: 24px;
+                text-align: center;
+                background-color: #FF6E64;
+                color: white;
+                font-size: 14px;
+                // vertical-align: middle;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 9px;
+                    right: -4px;
+                    // transform: translateY(-50%);
+                    width: 0;
+                    height: 0;
+                    transform: rotateZ(45deg);
+                    // border: 4px solid #FF6E64;
+                    border-right: 4px solid #FF6E64;
+                    border-left: 4px solid transparent;
+                    border-bottom: 4px solid transparent;
+                    border-top: 4px solid #FF6E64;
+
+                }
+            }
+            
+        }
+        strong{
+            font-size: 13px;
+        }
+    }
+    p{
+        
+        color: rgb(183,184,183);
+        font-size: 14px;
+    }
+}
+// 新闻内容
+.content{
+    height: 132px;
+    color: rgb(119,119,119);
+    .focus{
+        position: relative;
+        display: block;
+        float: left;
+        height: 132px;
+        width: 172px;
+        margin-right: 20px;
+        &::after{
+            content: '';
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.4);
+            display: none;
+        }
+        &:hover::after{
+            display: block;
+        }
+        img{
+            // display: block;
+            // vertical-align: top;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    p{  
+        margin-top: 10px;
+        // width: 100%;
+        // height: 28px;
+        // border: 1px solid red;
+        color: rgb(159,153,153);   
+        
+        a{
+            color: rgb(159,153,153);
+            &::before{
+                padding-right: 5px;
+                // text-decoration: none;
+            }
+            span{
+                text-decoration: underline;               
+            }
+            &:hover{
+                color: red;
+            }
+        }
+        
+    }
+}
+.right_bg{
+    margin-top: 25px;
+    height: 136px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.hot_search{
+    a{
+        position: relative;
+        display: block;
+        // height: 136px;
+        border: 1px solid #ccc;
+        margin-top: 25px;
+        padding: 0 15px 15px;
+        &:hover{
+            border-color: red;
+        }
+        &::after{
+            content: '热搜';
+            position: absolute;
+            top: 0;
+            left: 15px;
+            width: 58px;
+            height: 28px;
+            text-align: center;
+            line-height: 28px;
+            color: white;
+            background-color: rgb(255,94,82);
+        }
+        h4{
+            color: red;
+            margin-top: 47px;
+            font-size: 20px;
+        }
+        p{
+            color: rgb(153,153,153);
+            font-size: 12px;
+        }
+    }
+    
+
+}
+

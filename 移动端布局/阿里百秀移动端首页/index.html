@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="bootstrap/js/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/index.js"></script>
+		<title>阿里百秀</title>
+		<!--[if lt IE 9]>
+			<script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+			<script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+		<![endif]-->
+		<!-- 技术选型：响应式布局 -->
+		<!-- 使用bootstrap 框架 -->
+		<!-- 设计图：本设计采用34.1333rem设计尺寸 -->
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button
+								type="button"
+								class="navbar-toggle collapsed"
+								data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1"
+								aria-expanded="false"
+							>
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">阿里百秀</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div
+							class="collapse navbar-collapse"
+							id="bs-example-navbar-collapse-1"
+						>
+							<ul class="nav navbar-nav">
+								<li class="active">
+									<a href="#">新闻 <span class="sr-only">(current)</span></a>
+								</li>
+								<li><a href="#">生活</a></li>
+								<li><a href="#">自然</a></li>
+								<li><a href="#">科技</a></li>
+								<li><a href="#">奇趣</a></li>
+								<li><a href="#">美食</a></li>
+							</ul>
+							<form class="navbar-form navbar-left">
+								<div class="form-group">
+									<input
+										type="text"
+										class="form-control"
+										placeholder="输入搜索内容"
+									/>
+								</div>
+								<button type="submit" class="btn btn-default">搜索</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#" class="btn">登入</a></li>
+								<li><a href="#">注册</a></li>
+							</ul>
+							<!-- 点击登入 跳出模态框 -->
+							<div class="modal fade" tabindex="-1" role="dialog" id="mybtn">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button
+												type="button"
+												class="close"
+												data-dismiss="modal"
+												aria-label="Close"
+											>
+												<span aria-hidden="true">&times;</span>
+											</button>
+											<h4 class="modal-title">请输入登入信息</h4>
+										</div>
+										<div class="modal-body">
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label
+														for="inputEmail3"
+														class="col-sm-2 control-label"
+														>用户名</label
+													>
+													<div class="col-sm-10">
+														<input
+															type="email"
+															class="form-control"
+															id="inputEmail3"
+															placeholder="Email"
+														/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label
+														for="inputPassword3"
+														class="col-sm-2 control-label"
+														>密码</label
+													>
+													<div class="col-sm-10">
+														<input
+															type="password"
+															class="form-control"
+															id="inputPassword3"
+															placeholder="Password"
+														/>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" /> 记住用户名
+															</label>
+														</div>
+													</div>
+												</div>
+												<!-- <div class="form-group">
+											  <div class="col-sm-offset-2 col-sm-10">
+												<button type="submit" class="btn btn-default">Sign in</button>
+											  </div>
+											</div> -->
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button
+												type="button"
+												class="btn btn-default"
+												data-dismiss="modal"
+											>
+												关闭
+											</button>
+											<button type="button" class="btn btn-primary">
+												登录
+											</button>
+										</div>
+									</div>
+									<!-- /.modal-content -->
+								</div>
+								<!-- /.modal-dialog -->
+							</div>
+							<!-- /.modal -->
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+				</nav>
+			</div>
+			<div class="row">
+				<header class="col-md-2">
+					<div class="logo">
+						<a href="#">
+							<img
+								src="images/f08bfae670ebe6b60b06.png"
+								alt=""
+								class="hidden-xs"
+							/>
+						</a>
+						<a href="#" class="visible-xs logo_xs">阿里百秀</a>
+					</div>
+					<div class="nav">
+						<ul class="clearfix">
+							<li><a href="#" class="glyphicon glyphicon-camera">新闻</a></li>
+							<li><a href="#" class="glyphicon glyphicon-picture">生活</a></li>
+							<li><a href="#" class="glyphicon glyphicon-leaf">自然</a></li>
+							<li><a href="#" class="glyphicon glyphicon-plane">科技</a></li>
+							<li><a href="#" class="glyphicon glyphicon-globe">奇趣</a></li>
+							<li><a href="#" class="glyphicon glyphicon-cutlery">美食</a></li>
+						</ul>
+						<!-- 左侧底部搜索栏 -->
+						<div class="seach">
+							<div class="row">
+								<div class="col-xs-10 col-xs-push-1">
+									<input type="search" name="" id="" placeholder="输入关键字" />
+									<input class="btn btn-danger" type="submit" value="搜索" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<article class="col-md-7">
+					<!-- 新闻模块 -->
+					<div class="news_bg">
+						<ul>
+							<li>
+								<div
+									id="carousel-example-generic"
+									class="carousel slide"
+									data-ride="carousel"
+								>
+									<!-- Wrapper for slides -->
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="images/e6a2497d372c43ea2690.jpg" alt="..." />
+											<span>同步赞百科营销服务正式发布</span>
+											<!-- <div class="carousel-caption"><span>同步赞百科营销服务正式发布</span></div> -->
+										</div>
+										<div class="item">
+											<img src="images/20151123094103-150x150.jpg" alt="..." />
+											<span>同步赞百科营销服务正式发布</span>
+											<!-- <div class="carousel-caption"><span>同步赞百科营销服务正式发布</span></div> -->
+										</div>
+										<div class="item">
+											<img
+												src="images/041A4CF10862EC8-150x150.jpeg"
+												alt="..."
+											/>
+											<span>同步赞百科营销服务正式发布</span>
+											<!-- <div class="carousel-caption"><span>同步赞百科营销服务正式发布</span></div> -->
+										</div>
+									</div>
+
+									<!-- Controls -->
+									<a
+										class="left carousel-control"
+										href="#carousel-example-generic"
+										role="button"
+										data-slide="prev"
+									>
+										<span
+											class="glyphicon glyphicon-chevron-left"
+											aria-hidden="true"
+										></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a
+										class="right carousel-control"
+										href="#carousel-example-generic"
+										role="button"
+										data-slide="next"
+									>
+										<span
+											class="glyphicon glyphicon-chevron-right"
+											aria-hidden="true"
+										></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<!-- <a href="#">
+									<img src="images/e6a2497d372c43ea2690.jpg" alt="" />
+									<span>同步赞百科营销服务正式发布</span>
+								</a> -->
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/20151130092792289228-150x150.jpg" alt="" />
+									<span>奇了!成都一小区护卫长得像马云,市民纷纷求合影</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/E47E03D9108E63E-150x150.jpeg" alt="" />
+									<span>震惊!巨型蜈蚣遭毒蛇吞噬穿肠而出同归于禁</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/541A31A14BF5B1C-150x150.jpeg" alt="" />
+									<span>另类教育!外国老爸怒传女儿不雅照到Facebook</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/EC8CCE0746F6E27-150x150.jpeg" alt="" />
+									<span>竹子真的是大熊猫的最爱吗?NO,国宝也吃肉</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 发表 -->
+					<div class="publish">
+						<div class="row">
+							<div class="col-sm-12 news">
+								<h3>
+									<a href="#"
+										><span class="hidden-xs">新闻</span>
+										自助发稿融媒体平台赞传媒正式上线，赠免费写稿服务</a
+									>
+									<strong
+										class="hidden-xs glyphicon glyphicon-picture"
+										title="此处有一张图片"
+										>1</strong
+									>
+								</h3>
+								<p>发布于 2021-04-26 来源：河北广播电视台</p>
+								<!-- 新闻内容 -->
+								<div class="content hidden-xs">
+									<a href="#" class="focus"
+										><img src="images/8593563f73a30d04efbb-150x150.jpg" alt=""
+									/></a>
+									4月23日，同步赞旗下自助发稿融媒体平台：赞传媒正式发布，网站同步上线正式运营。
+									发布会上，同步赞负责人林老师表示，赞传媒平台免费开放注册、免费使用。同时在赞传媒平台发稿，还免费赠送专业记者代写新闻稿的服务。
+									据介绍，赞传媒是同步赞旗下一个为企业和品牌提供自助发稿的融媒体平台，提..
+									<p>
+										阅读(788) &nbsp;
+										<a href="#" class="glyphicon glyphicon-thumbs-up"
+											><span>赞(227)</span></a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 news">
+								<h3>
+									<a href="#"
+										><span class="hidden-xs">奇趣</span>震惊！巨型蜈蚣遭毒蛇吞噬
+										穿肚而出同归于尽</a
+									>
+									<strong
+										class="hidden-xs glyphicon glyphicon-picture"
+										title="此处有一张图片"
+										>1</strong
+									>
+								</h3>
+								<p>发布于 2021-04-26 来源：河北广播电视台</p>
+								<!-- 新闻内容 -->
+								<div class="content hidden-xs">
+									<a href="#" class="focus"
+										><img src="images/E47E03D9108E63E-150x150 (1).jpeg" alt=""
+									/></a>
+									猎杀与求生是动物在大自然的生存的技能，往往以一方胜利另一方失败告终。不过有研究人员在南欧一个岛上发现同归于尽的大自然奇观。一条蝰蛇与体型相当的蜈蚣搏斗，蛇将蜈蚣吞噬，蜈蚣却在蛇体内穿肠烂肚逃生，最终两毒物双双气绝。
+									马其顿共和国一个科学团队到Golem Grad岛屿调查，经过岛上...
+									<p>
+										阅读(788) &nbsp;
+										<a href="#" class="glyphicon glyphicon-thumbs-up"
+											><span>赞(227)</span></a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 news">
+								<h3>
+									<a href="#"
+										><span class="hidden-xs">生活</span> 关于指甲的10个健康知识
+										你知道几个？</a
+									>
+									<strong
+										class="hidden-xs glyphicon glyphicon-picture"
+										title="此处有一张图片"
+										>1</strong
+									>
+								</h3>
+								<p>发布于 2021-04-26 来源：河北广播电视台</p>
+								<!-- 新闻内容 -->
+								<div class="content hidden-xs">
+									<a href="#" class="focus"
+										><img src="images/9D8A213E47E8822-150x150.jpeg" alt=""
+									/></a>
+									指甲是经常容易被人们忽略的身体部位，事实上从指甲的健康状况可以看出一个人的身体健康状况，快来看看10个暗藏在指甲里知识吧！
+									变色的指甲
+									变色的指甲能显示出很多状况，例如感染、营养不良、或器官出现问题。如果你长期涂指甲油，你很容易会有黄指甲，不过黄指甲也有可能是霉菌感染引发的。咖啡...
+									<p>
+										阅读(788) &nbsp;
+										<a href="#" class="glyphicon glyphicon-thumbs-up"
+											><span>赞(227)</span></a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 news">
+								<h3>
+									<a href="#"
+										><span class="hidden-xs">新闻</span>
+										自助发稿融媒体平台赞传媒正式上线，赠免费写稿服务</a
+									>
+									<strong
+										class="hidden-xs glyphicon glyphicon-picture"
+										title="此处有一张图片"
+										>1</strong
+									>
+								</h3>
+								<p>发布于 2021-04-26 来源：河北广播电视台</p>
+								<!-- 新闻内容 -->
+								<div class="content hidden-xs">
+									<a href="#" class="focus"
+										><img src="images/8593563f73a30d04efbb-150x150.jpg" alt=""
+									/></a>
+									4月23日，同步赞旗下自助发稿融媒体平台：赞传媒正式发布，网站同步上线正式运营。
+									发布会上，同步赞负责人林老师表示，赞传媒平台免费开放注册、免费使用。同时在赞传媒平台发稿，还免费赠送专业记者代写新闻稿的服务。
+									据介绍，赞传媒是同步赞旗下一个为企业和品牌提供自助发稿的融媒体平台，提..
+									<p>
+										阅读(788) &nbsp;
+										<a href="#" class="glyphicon glyphicon-thumbs-up"
+											><span>赞(227)</span></a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+						<nav aria-label="Page navigation">
+							<ul class="pagination">
+								<li>
+									<a href="javascript:;" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li><a href="javascript:;">1</a></li>
+								<li><a href="javascript:;">2</a></li>
+								<li><a href="javascript:;">3</a></li>
+								<li><a href="javascript:;">4</a></li>
+								<li><a href="javascript:;">5</a></li>
+								<li>
+									<a href="javascript:;" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</article>
+				<!-- 右侧内容 -->
+				<aside class="col-md-3">
+					<div class="right_bg">
+						<img src="images/zgboke.jpg" alt="" />
+					</div>
+					<div class="hot_search">
+						<a href="#">
+							<h4>欢迎加入中国博客联盟</h4>
+							<p>
+								这里收录国内各个领域的优秀博客，是一个全人工编辑的开放式博客联盟交流和展示平台....
+							</p>
+						</a>
+					</div>
+					<div class="new-hot">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a
+									href="#home"
+									aria-controls="home"
+									role="tab"
+									data-toggle="tab"
+									>热点</a
+								>
+							</li>
+							<li role="presentation">
+								<a
+									href="#profile"
+									aria-controls="profile"
+									role="tab"
+									data-toggle="tab"
+									>新闻</a
+								>
+							</li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home">
+								今天是个好天气
+							</div>
+							<div role="tabpanel" class="tab-pane" id="profile">
+								明天会下雨
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+		<script>
+			$(".carousel").carousel({
+				interval: 2000,
+			});
+		</script>
+	</body>
+</html>
