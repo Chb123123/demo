@@ -10,43 +10,22 @@ $(function () {
         },
         // 鼠标离开 下拉菜单收起
         mouseout: function () {
-            $(this).parent().children('.nav-menu').stop().slideUp(100)
+            $(this).parent().children('.nav-menu').stop().slideUp(200)
         }
     })
     // 鼠标移动 导航栏 下拉菜单显示
-    // $('.nav').on('mouseout', function () {
-    //     // console.log($(this).index())
-    //     $(this).children().children('.nav-menu').hide()
-    //     // $(this).children('.nav-menu').slideDown(100).siblings().children('.nav-menu').slideUp(100)
-    // })
+    $('.nav').on('mouseout', function () {
+        $(this).children().children('.nav-menu').hide()
+    })
     // 轮播图大模块
     // 鼠标经过小圆点 对应的图片显示出来 
-    var flag = true
-    var index1 = 0;
-    var timer = setInterval(function(){
-        index1++
-        if(index1 > 1){
-            index1 = 0;
-        }
-        $('.cat-dost').chlidren('li').eq(index1).css('background-color', 'rgb(0,101,171)').siblings().css('background-color', 'white')
-        $('.cat-map').stop().fadeTo(0, 0.5)
-            $('.cat-map').css('left', -1920 * index1 + 'px')
-            // $('.cat-map').fadeIn(300)
-            $('.cat-map').stop().fadeTo(400, 1)
-    },1000)
-    $('.cat-dost').on('mouseover', 'li', function () {
-        $(this).css('background-color', 'rgb(0,101,171)').siblings().css('background-color', 'white')
-        var index = $(this).index()
-        if (flag) {
-            flag = false
-            // console.log($(this).index())
-            $('.cat-map').stop().fadeTo(0, 0.5)
-            $('.cat-map').css('left', -1920 * index + 'px')
-            // $('.cat-map').fadeIn(300)
-            $('.cat-map').stop().fadeTo(400, 1, function () {
-                flag = true
-            })
-        }
+    $(".cat-dost").children().on("mouseover",function(){
+        $(this).css("background-color","#0065ab").siblings().css('background-color','white')
+        $('.cat-map').children().eq($(this).index()).stop().fadeTo(300,1).siblings().stop().fadeTo(300,0)
+    })
+    // 鼠标悬停在 大轮播图上面 轮播图动画跳转
+    $(".cat-map").on("muserover",function(){
+        clearInterval()
     })
     // 校园要闻轮播图模块
     var num = 0;
@@ -62,10 +41,8 @@ $(function () {
     // 鼠标经过轮播图 计数器停止 鼠标离开 计数器打开
     var times = setInterval(function () {
         num++
-
         if (num > 5) {
             num = 1;
-
             $('.cat6_1_10').css('left', '0')
         }
         $('.cat6_1_10').stop().animate({
@@ -75,7 +52,7 @@ $(function () {
         if (num == 5) {
             $('.top').children('li').eq(0).css('background-color', 'rgb(235, 91, 84)').siblings().css('background-color', 'white')
         }
-    }, 3000)
+    }, 5000)
     // 鼠标经过 停止轮播图
     $('.cat6').on('mouseover', function () {
         clearInterval(times)
@@ -108,7 +85,7 @@ $(function () {
             num1 = 1;
             $('.gd-map').css('left', '0')
         }
-        console.log(num1)
+        // console.log(num1)
         $('.gd-map').animate({
             left: -328 * num1,
         })
@@ -136,7 +113,7 @@ $(function () {
         mouseout: function () {
             times1 = setInterval(function () {
                 $('.btn-left').click()
-            }, 3000)
+            }, 5000)
         }
     })
     // 侧边栏模块
@@ -153,5 +130,14 @@ $(function () {
         // state = false;
         $('.fixed-none').fadeTo(100, 0)
         $('.fixed_nav').show(500)
+    })
+    // 鼠标经过右侧固定导航栏 导航栏下的图片显示
+    $(".fixed_nav").children("li").on({
+        mouseover: function () {
+            $(this).children('.fixed_nav_map').stop().show()
+        },
+        mouseout: function() {
+            $(this).children('.fixed_nav_map').stop().hide()
+        }
     })
 })
