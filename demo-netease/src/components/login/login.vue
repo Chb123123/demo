@@ -22,8 +22,8 @@ export default {
   name: 'myLogin',
   data () {
     return {
-      userPhone: '',
-      userPwd: ''
+      userPhone: '123',
+      userPwd: '123'
     }
   },
   methods: {
